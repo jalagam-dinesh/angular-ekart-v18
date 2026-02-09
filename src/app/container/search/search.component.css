@@ -26,6 +26,12 @@
     color: #fff;
 }
 
+.btn-search-disabled {
+    background-color: #c1c1c1;
+    color: #fff;
+    cursor: not-allowed;
+}
+
 .ekart-search-result-for {
     margin: 20px auto;
     padding: 10px 140px;

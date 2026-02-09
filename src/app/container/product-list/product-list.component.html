@@ -1,20 +1,3 @@
 <div class="ekart--products--container">
-    <div class="ekart--product--item" *ngFor="let product of products;let i = index">
-        <div class="ekart-wishlist-sale-container">
-            <div class="ekart--add--to--wishlist">
-                <i class="fa fa-heart-o" aria-hidden="true"></i>
-                <i>{{i}}</i>
-            </div>
-            <div class="ekart-on-sale-tag">75% OFF</div>
-        </div>
-        <div class="ekart--product--image">
-            <img [src]="product.imageURL" class="ekart--product--image">
-        </div>
-        <div class="ekart--add--to--price">
-            {{product.price}}
-        </div>
-        <div class="ekart--product--name">{{product.name}}</div>
-        <div class="ekart--product--category">{{product.gender}} . {{product.category}} . {{product.brand}}</div>
-        <div class="ekart--product--available-colors">{{product.color.length}} Colors . Best Seller</div>
-    </div>
+    <app-product *ngFor="let product of products" [product]="product"></app-product>
 </div>
